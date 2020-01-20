@@ -1,0 +1,262 @@
+<html>
+  <head>
+    <script src="/static/jquery-3.4.1.min.js"></script>
+    <script src="/static/slotmachine.js"></script>
+    <script src="/static/jquery.slotmachine.js"></script>
+    <link
+      rel="stylesheet"
+      href="/static/bootstrap.min.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/jquery.slotmachine.min.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/style.css"
+      type="text/css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <h1>
+      Hello world!
+    </h1>
+    <button id="randomizeButton">Shuffle</button>
+    <div id="randomize">
+      <div class="container">
+        <h1>Randomize your stuff!</h1>
+        <div class="row">
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine1"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine1Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine2"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine2Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine3"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine3Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine4"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine4Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine5"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine5Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine6"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine6Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div>
+              <div
+                id="machine7"
+                class="randomizeMachine"
+                style="overflow: hidden;"
+              >
+                <div
+                  class="slotMachineContainer"
+                  style="transition: all 0.4s ease-out 0s; transform: matrix(1, 0, 0, 1, 0, -500);"
+                >
+                  <div class="text-center">1</div>
+                  <div class="text-center">2</div>
+                  <div class="text-center">3</div>
+                  <div class="text-center">4</div>
+                  <div class="text-center">5</div>
+                  <div class="text-center">6</div>
+                  <div class="text-center">7</div>
+                  <div class="text-center">8</div>
+                </div>
+              </div>
+            </div>
+            <div id="machine7Result" class="col-xs-4 machineResult">
+              Index: 5
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const btn = document.querySelector("#randomizeButton");
+  const results = {
+    machine1: document.querySelector("#machine1Result"),
+    machine2: document.querySelector("#machine2Result"),
+    machine3: document.querySelector("#machine3Result"),
+    machine4: document.querySelector("#machine4Result"),
+    machine5: document.querySelector("#machine5Result"),
+    machine6: document.querySelector("#machine6Result"),
+    machine7: document.querySelector("#machine7Result")
+  };
+  const el1 = document.querySelector("#machine1");
+  const el2 = document.querySelector("#machine2");
+  const el3 = document.querySelector("#machine3");
+  const el4 = document.querySelector("#machine4");
+  const el5 = document.querySelector("#machine5");
+  const el6 = document.querySelector("#machine6");
+  const el7 = document.querySelector("#machine7");
+  const machine1 = new SlotMachine(el1, { active: 0 });
+  const machine2 = new SlotMachine(el2, { active: 1 });
+  const machine3 = new SlotMachine(el3, { active: 2 });
+  const machine4 = new SlotMachine(el4, { active: 3 });
+  const machine5 = new SlotMachine(el5, { active: 4 });
+  const machine6 = new SlotMachine(el6, { active: 5 });
+  const machine7 = new SlotMachine(el7, { active: 6 });
+
+  function onComplete(active) {
+    results[this.element.id].innerText = `Index: ${this.active}`;
+  }
+
+  btn.addEventListener("click", () => {
+    $(".text-center").text(Math.floor(Math.random() * 10 + 1));
+    machine1.shuffle(5, onComplete);
+    setTimeout(() => machine2.shuffle(5, onComplete), 1200);
+    setTimeout(() => machine3.shuffle(5, onComplete), 1200);
+    setTimeout(() => machine4.shuffle(5, onComplete), 1200);
+    setTimeout(() => machine5.shuffle(5, onComplete), 1200);
+    setTimeout(() => machine6.shuffle(5, onComplete), 1200);
+    setTimeout(() => machine7.shuffle(5, onComplete), 1200);
+  });
+</script>
