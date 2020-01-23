@@ -24,9 +24,18 @@
   </head>
 
   <body>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div class="head">
+          <a class="btn-close 1" href="javascript:;"></a>
+        </div>
+        <div class="content"></div>
+      </div>
+    </div>
     <h1>
       幸运数字预测
     </h1>
+    <h2>Get Your Lucky Number!</h2>
     <div id="randomize">
       <div class="container">
         <div class="row">
@@ -52,7 +61,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine1Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -76,7 +84,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine2Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -100,7 +107,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine3Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -124,7 +130,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine4Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -148,7 +153,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine5Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -172,7 +176,6 @@
                 </div>
               </div>
             </div>
-            <div id="machine6Result" class="col-xs-4 machineResult"></div>
           </div>
           <div class="col-sm-1">
             <div>
@@ -196,18 +199,21 @@
                 </div>
               </div>
             </div>
-            <div id="machine7Result" class="col-xs-4 machineResult"></div>
           </div>
+        </div>
+        <div class="row">
+          <span style="text-align: center;" id="wish_message"></span>
         </div>
       </div>
     </div>
     <div class="row">
       <button
         id="randomizeButton"
-        style="margin:auto;margin-top:50px;font-size:100px;border-radius:15px;"
+        style="margin:auto;margin-top:50px;font-size:60px;border-radius:15px;"
         class="btn btn-warning"
       >
-        点击开始
+        <span style="display:block">点击开始</span>
+        <span>GO</span>
       </button>
     </div>
   </body>
@@ -238,8 +244,12 @@
   const machine6 = new SlotMachine(el6, { active: 5 });
   const machine7 = new SlotMachine(el7, { active: 6 });
 
+  let message_array = ["恭喜发财！万事如意！", "鼠年大吉！"];
+
   function onComplete(active) {
-    results[this.element.id].innerText = `Index: ${this.active}`;
+    // results[this.element.id].innerText = `Index: ${this.active}`;
+    console.log("this.element id", this.element.id);
+    $("#wish_message").html(message_array[0]);
   }
 
   function shuffle(arr) {
@@ -272,6 +282,7 @@
     let val = "";
     let timeout = 0;
     let i = 1;
+    message_array = shuffle(message_array);
     for (let m of machines) {
       (function(i, timeout) {
         setTimeout(() => {
@@ -294,5 +305,12 @@
       timeout += 200;
       i += 1;
     }
+  });
+  $(document).ready(function() {
+    $(".btn-close").click(function() {
+      $(".modal-wrapper").toggleClass("open");
+      $(".page-wrapper").toggleClass("blur");
+      return false;
+    });
   });
 </script>
