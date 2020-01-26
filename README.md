@@ -1,8 +1,8 @@
 # fortuneCookie
 https://github.com/josex2r/jQuery-SlotMachine
 
-#installation:
+# installation:
 npm install
 
-#command to run
+# command to run
 node index.js
